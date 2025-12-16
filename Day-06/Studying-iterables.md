@@ -40,3 +40,32 @@ IterationResultObject{
 Second Vid: https://www.youtube.com/watch?v=0kHJgw6Li_4
 
 
+__Iterating Objects__
+
+TLDR: Making Objects Iterable
+
+* To make objects iterable:
+1. Define a function(__iterator__) with a Key "[Symbol.iterator]". (Function is defined using function expression method)Ex:
+
+person[Symbol.iterator] = function(){
+
+}
+
+2. Define 3 varibles + next() method:
+> For example: 
+    >> person[Symbol.iterator] = function(){
+        let properties = Object.keys(ObjectName) ---This lets me access the key/names of variables in my object.
+
+        let count = 0 --- This is my counter variable
+
+        let isDone = false  --- This is stores the boolean result for my boolean flag
+
+        let next(){
+            if(count>= properties.length){
+                isDone = true;
+            }
+            return{done: isDone, value: this[properties[count++]]};
+        } --- My next method which returns an iteration result object.
+        return {next}; 
+    }
+    

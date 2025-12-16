@@ -2,5 +2,5 @@
 
 --- -> That's just me talking.
 
-* -> Bullet points!
+* & - -> Bullet points!
 
