@@ -14,3 +14,6 @@ function createIterator(array){
 let myIterator = createIterator(iterable);
 
 console.log(myIterator.next());
+
+/// Already have my objects
+
