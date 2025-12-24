@@ -26,3 +26,8 @@ __Method 1__: GETELEMENTBYID
 __Method 2__: [documentproperty].textContent --> Returns the textcontent in the called property.
 
 __Method 3__: [documentproperty].innerText--> Returns the text content of the called proprety.
+
+-------- Day 2 -- Continuation of JS DOM crash course pt. 1
+
+
+
