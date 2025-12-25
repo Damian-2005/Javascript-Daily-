@@ -29,5 +29,13 @@ __Method 3__: [documentproperty].innerText--> Returns the text content of the ca
 
 -------- Day 2 -- Continuation of JS DOM crash course pt. 1
 
+"I blocked out" 😂
 
+---------- Day 3 -- Learning more methods.
+
+__Method 4__: [document].style.[cssStylinginCamelCase]; For ecample: gettingHeader.style.borderBottom = red 2px solid;
+
+__Method 5__: [document].getElementsByClassName; --> Used to get specific elements by their class name. 
+
+__Method 6__: [document].getElementByTagName; --> Used to select elements with a particular tag name.
 

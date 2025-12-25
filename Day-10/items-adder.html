@@ -39,8 +39,19 @@
   <script>
     // alert("Hello World");
     let gettingHeader = document.getElementById("main-header");
-    
-  </script>
+    // console.log(gettingHeader.innerText);
+    // gettingHeader.innertext = "God is good";
+    // console.log(gettingHeader);
+    gettingHeader.innerHTML = '<h4>This is crazy</h4>'
+    gettingHeader.style.borderBottom = '2px solid red';
+    let items = document.getElementsByClassName('list-group-item');
+    console.log(items);
+    items[0].textContent = 'Messing around with the first item';
+    items[0].style.color = 'red'; // Changed the color of the font to red. 
+    for (let item of items){
+      item.style.color = 'yellow'; // Looping through the array of items to make the color of the fonts yellow.
+    }
+    </script>
 </body>
 </html>
 
