@@ -39,3 +39,12 @@ __Method 5__: [document].getElementsByClassName; --> Used to get specific elemen
 
 __Method 6__: [document].getElementByTagName; --> Used to select elements with a particular tag name.
 
+__Method 7__: [document].querySelector('') --> Whatever you want to select goes into the parentheses. Any CSS seletor can be used with this method.
+
+Picked up something: _.value_ property vs _.textContent_ Method
+
+.value property is used to access form elements like input, select and textarea __while__ .textContent is used for accessing text elements and blocks of the webpage. like div, p, span etc...
+
+
+__Method 8__: [document].querySelectorAll('');
+ 

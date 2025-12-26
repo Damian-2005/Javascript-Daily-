@@ -49,8 +49,15 @@
     items[0].textContent = 'Messing around with the first item';
     items[0].style.color = 'red'; // Changed the color of the font to red. 
     for (let item of items){
-      item.style.color = 'yellow'; // Looping through the array of items to make the color of the fonts yellow.
+      item.style.color = 'black'; // Looping through the array of items to make the color of the fonts yellow.
     }
+    let accessingButton = document.querySelector('.btn');
+    accessingButton.value = "send";
+    //Messing around with the list items 
+
+    let firstitem = document.querySelector('.list-group-item:nth-child(1)')
+
+    firstitem.style.color = 'red';
     </script>
 </body>
 </html>
