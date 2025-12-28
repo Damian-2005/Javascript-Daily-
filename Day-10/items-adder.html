@@ -37,27 +37,27 @@
     </div> <!-- main -- card -- card-body -->
   </div> <!-- container -->
   <script>
-    // alert("Hello World");
-    let gettingHeader = document.getElementById("main-header");
-    // console.log(gettingHeader.innerText);
-    // gettingHeader.innertext = "God is good";
-    // console.log(gettingHeader);
-    gettingHeader.innerHTML = '<h4>This is crazy</h4>'
-    gettingHeader.style.borderBottom = '2px solid red';
-    let items = document.getElementsByClassName('list-group-item');
-    console.log(items);
-    items[0].textContent = 'Messing around with the first item';
-    items[0].style.color = 'red'; // Changed the color of the font to red. 
-    for (let item of items){
-      item.style.color = 'black'; // Looping through the array of items to make the color of the fonts yellow.
-    }
-    let accessingButton = document.querySelector('.btn');
-    accessingButton.value = "send";
-    //Messing around with the list items 
+      //Querying the parent node using the list items as an example.
+      let items = document.querySelector('#items');
+      console.log(items);
+      let itemsParent = items.parentNode;
+      itemsParent.style.backgroundColor = "#f4f4f4" // Styled the background of the entire div
+      // console.log(itemsParent);
+      // console.log(items.children);
+      // console.log(items.children[0]);
+      // console.log(items.lastElementChild);
+      console.log(items.firstElementChild.nextSibling);
 
-    let firstitem = document.querySelector('.list-group-item:nth-child(1)')
+      let newparagraph = document.createElement('p');
+      console.log(newparagraph);
+      newparagraph.className = 'hello';
+      newparagraph.id = 'hello2';
+      console.log(newparagraph);
+      newparagraph.setAttribute('title', 'Hello Div')
 
-    firstitem.style.color = 'red';
+      let newptext = document.createTextNode('The text in this paragraph tag');
+      newparagraph.appendChild(newptext);
+      console.log(newparagraph);
     </script>
 </body>
 </html>

@@ -47,4 +47,3 @@ Picked up something: _.value_ property vs _.textContent_ Method
 
 
 __Method 8__: [document].querySelectorAll('');
- 
