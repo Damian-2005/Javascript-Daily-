@@ -36,3 +36,6 @@ In the above js code, I created a new paragraph element and gave it a class "hel
 
 In the above code, I wanted to add a text into the create p tag.
 I created a textnode and appendeded it into the p tag as a child element.
+
+
+---- Completed two vids now on vid 3.

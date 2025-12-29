@@ -37,16 +37,6 @@
     </div> <!-- main -- card -- card-body -->
   </div> <!-- container -->
   <script>
-      //Querying the parent node using the list items as an example.
-      let items = document.querySelector('#items');
-      console.log(items);
-      let itemsParent = items.parentNode;
-      itemsParent.style.backgroundColor = "#f4f4f4" // Styled the background of the entire div
-      // console.log(itemsParent);
-      // console.log(items.children);
-      // console.log(items.children[0]);
-      // console.log(items.lastElementChild);
-      console.log(items.firstElementChild.nextSibling);
 
       let newparagraph = document.createElement('p');
       console.log(newparagraph);
@@ -58,7 +48,13 @@
       let newptext = document.createTextNode('The text in this paragraph tag');
       newparagraph.appendChild(newptext);
       console.log(newparagraph);
-    </script>
+
+      //Adding the new paragraph to our HTML code.
+      let container = document.querySelector('#main'); //--> Selecting the div tag.
+      
+      container.insertAdjacentElement('afterend', newparagraph); // Learnt that you can't only insert between two selected elements but can just select one element and insert around it 🤓
+
+      </script>
 </body>
 </html>
 
