@@ -33,28 +33,23 @@
         <li class="list-group-item">item 3</li>
         <li class="list-group-item">item 4</li>
       </ul>
+      <br> 
+      <button class="btn btn-dark-block" id="button">Click Here</button> 
+
 
     </div> <!-- main -- card -- card-body -->
   </div> <!-- container -->
   <script>
+  // Select the button and attach a click event listener
+  document.querySelector("#button").addEventListener('click', buttonClick); 
+  function buttonClick() {
+  // Use querySelector because it supports CSS pseudo-classes like :nth-child
+  let firstItem = document.querySelector('#items li:nth-child(1)'); 
+  // Check if the item exists before trying to change text to avoid errors
+    firstItem.textContent = 'You added an item'; // Updates the text content
+  }
 
-      let newparagraph = document.createElement('p');
-      console.log(newparagraph);
-      newparagraph.className = 'hello';
-      newparagraph.id = 'hello2';
-      console.log(newparagraph);
-      newparagraph.setAttribute('title', 'Hello Div')
-
-      let newptext = document.createTextNode('The text in this paragraph tag');
-      newparagraph.appendChild(newptext);
-      console.log(newparagraph);
-
-      //Adding the new paragraph to our HTML code.
-      let container = document.querySelector('#main'); //--> Selecting the div tag.
-      
-      container.insertAdjacentElement('afterend', newparagraph); // Learnt that you can't only insert between two selected elements but can just select one element and insert around it 🤓
-
-      </script>
+  </script>
 </body>
 </html>
 
