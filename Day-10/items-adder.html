@@ -42,12 +42,15 @@
   <script>
   // Select the button and attach a click event listener
   document.querySelector("#button").addEventListener('click', buttonClick); 
-  function buttonClick() {
-  // Use querySelector because it supports CSS pseudo-classes like :nth-child
-  let firstItem = document.querySelector('#items li:nth-child(1)'); 
-  // Check if the item exists before trying to change text to avoid errors
-    firstItem.textContent = 'You added an item'; // Updates the text content
-  }
+  function buttonClick(e) {
+      console.log(e.type); // --> Returns the type of action being performed on the button, in this case we get a "click"
+
+      console.log(e.clientX); // Returns the X coordinate of the mouse when it clicked the button 
+      console.log(e.clientY); // Returns the Y coordinate of the mouse when it clicked the button 
+      // Both of these are from the "window"
+      // RECOMMENDED: 
+      console.log(e.offsetY);  console.log(e.offsetX);
+    }
 
   </script>
 </body>
