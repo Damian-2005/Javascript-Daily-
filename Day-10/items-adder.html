@@ -35,22 +35,30 @@
       </ul>
       <br> 
       <button class="btn btn-dark-block" id="button">Click Here</button> 
-
-
     </div> <!-- main -- card -- card-body -->
   </div> <!-- container -->
-  <script>
-  // Select the button and attach a click event listener
-  document.querySelector("#button").addEventListener('click', buttonClick); 
-  function buttonClick(e) {
-      console.log(e.type); // --> Returns the type of action being performed on the button, in this case we get a "click"
+        <div style="background: #ff4f; width: 400px;height: 300px; border-radius: 20px;" id="box">
+        <p>Hello</p>
+      </div> <!--Nothing's here, just a box to test mouse actions-->
 
-      console.log(e.clientX); // Returns the X coordinate of the mouse when it clicked the button 
-      console.log(e.clientY); // Returns the Y coordinate of the mouse when it clicked the button 
-      // Both of these are from the "window"
-      // RECOMMENDED: 
-      console.log(e.offsetY);  console.log(e.offsetX);
-    }
+  <script>
+    let itemInput = document.querySelector('input[type="text"]');
+    let form = document.querySelector('form');
+
+    let doesWhatitdoes = (e) => {
+      console.log(e.target.value);
+      console.log('Event Type: ' +e.type);
+      document.querySelector('#box').innerHTML = '<h3> '+e.target.value+' </h3>';
+
+    };
+
+        itemInput.addEventListener('keydown', doesWhatitdoes);
+
+    box.addEventListener('mousemove', doesWhatitdoes);
+
+  
+  
+
 
   </script>
 </body>

@@ -37,7 +37,7 @@ console.log(e.altKey) -> Returns the T or F based on whether the alt key was hel
 We also have console.log(e.ctrlKey) and many others.
 
 
-//// __MOUSE EVENTS__ /////
+//// __MOUSE EVENTS NEXT__ /////
 
 
  
