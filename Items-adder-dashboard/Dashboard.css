@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: red; */
+}
+header{
+    background-color: #A8DF8E;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    justify-content:space-between;
+}
+header{
+    flex-direction: row;
+}
+section{
+    background-color: #FFAAB8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+footer{
+    background-color: #F0FFDF;
+    text-align: center;
+}
+.cards{
+    background-color:red;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
