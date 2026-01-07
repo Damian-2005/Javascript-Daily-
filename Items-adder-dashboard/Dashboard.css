@@ -2,26 +2,57 @@ body{
     margin: 0px;
     padding: 0px;
     /* background-color: red; */
+    background-color: #fcfafb;
+    font-family: pangolin;
 }
 header{
     background-color: #A8DF8E;
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 5%;
     justify-content:space-between;
 }
-header{
-    flex-direction: row;
+header {
+  /* 1. Necessary to make the internal items align */
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+
+  /* 2. Visual styling */
+  border-radius: 20px;
+  background-color: #a8e094; /* Added so you can see the box */
+  padding: 20px; /* Internal spacing so text doesn't touch the edge */
+  box-shadow: 10px 10px 0px #91919120; 
+
+  /* 3. THE FIX: Width and Centering */
+  max-width: 90%; 
+  margin: 20px auto; /* '20px' for top/bottom, 'auto' for left/right centering */
+  
+  grid-row: span 3; 
 }
 section{
     background-color: #FFAAB8;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 20px auto;
+    gap: 115px;
+    box-shadow: 10px 10px 0px #91919120;
+
 }
-footer{
-    background-color: #F0FFDF;
-    text-align: center;
+footer {
+    background-color: #F0FFDF; /* Sets the light green background color */
+    text-align: center;        /* Centers the text inside the box */
+    width: 90%;               /* Forces the box to be 90% of the screen width */
+    max-width: 415px;        /* Prevents the box from getting too wide on monitors */
+    margin: 20px auto;        /* 20px spacing top/bottom, 'auto' centers it horizontally */
+    border-radius: 20px;      /* Rounds the corners to create the 'box' look */
+    padding: 20px;            /* Adds space between the text and the box edges */
+    box-shadow: 10px 10px 0px #91919120;
 }
 .cards{
     background-color:red;
@@ -29,4 +60,39 @@ footer{
     height: 70px;
     margin-top: 10px;
     border-radius: 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 25px;
+    height: 100vh;
+}
+section{
+    grid-row: span 8;
+}
+.pangolin-regular {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.cards{
+    /* Size and Color */
+  width: 20;
+  height: 50px;
+  background-color: #F75C62; /* The Red/Pink color */
+  
+  /* The "Cream" Outline */
+  border: 4px solid #FFFFE8; 
+  border-radius: 7px;       /* Rounded corners */
+  
+  /* Positioning */
+  position: relative;
+  display: inline-block;
+  
+  /* Rotation for the top card */
+  transform: rotate(10deg);
+  z-index: 10;
+}
+button{
+    font-family: pangolin;
 }
