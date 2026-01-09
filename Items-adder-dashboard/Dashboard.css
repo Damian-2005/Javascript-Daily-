@@ -101,5 +101,15 @@ input{
     border: 4px solid #FFFFE8; 
     border-radius: 30px;
 }
-.inputContainer{
+.tasksChecklist{
+    gap: 10px;
+}
+.tasks{
+    border: 2px #FFFFE8 solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    border-radius: 2px;
+    background-color: #A8DF8E;
+    
 }
