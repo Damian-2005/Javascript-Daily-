@@ -1,8 +1,12 @@
 body{
     margin: 0px;
     padding: 0px;
-    /* background-color: red; */
-    background-color: #fcfafb;
+/* Light background color */
+    background-color: #fcfcfc;
+  /* The dot pattern */
+    background-image: radial-gradient(#d1d5db 1px, transparent 1.5px);
+  /* spacing between dots */
+    background-size: 20px 20px;
     font-family: pangolin;
 }
 header{
