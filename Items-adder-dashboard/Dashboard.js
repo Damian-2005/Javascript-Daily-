@@ -1,16 +1,30 @@
-// Making the list add task button add elements.
+console.log("Hello");
 
-let form = document.getElementById('addform'); // --> Selecting the form element.
-let itemList = document.getElementById('items') // This selects the list element in the body.
+// Now that the code is working, let's work with it.
 
-// Form Submit event
+// Calling the forms
 
-form.addEventListener('submit', addItem);
+let form = document.getElementById('forms');
+let tasksList = document.getElementById('task');
 
-// The Add item function
+// form.addEventListener('submit', addNewTask);
 
-function addItem(e){
+// Declaration of function the adds the tasks.
+
+function addNewTask(e) {
     e.preventDefault();
+    let newTask = document.getElementById('task').value;
+    let li = document.createElement('li');
+    li.className = 'task';
+    li.appendChild(document.createTextNode(newTask));
 
-    // Get input value 
+    if (newTask === "") return;
+
+    let checkbox = document.createElement('input');
+    checkbox.type ='checkbox';
+    li.appendChild(checkbox);
+
+    tasksList.appendChild(li);
 }
+
+form.addEventListener('submit', addNewTask);

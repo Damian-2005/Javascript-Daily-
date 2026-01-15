@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,29 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pangolin&display=swap" rel="stylesheet">
+<script src="Dashboard.js" ></script>
 </head>
 <body>
     <div class="grid-container">
 
         <header> <!--Header-->
             <h3>DASHBOARD</h3>
-            <form class="form-only" id="addform">
-            <div>
-                <input type="text">
-                <button>search</button>
-            </div>
-            <div>
-                <button>Add Task</button>
-                <input type="text">
-            </div>
+        <div>
+            <form class="addForm" id="forms">
+                <input type="text" placeholder="Add tasks" id="task">
+                <input class="butn" type="submit">
             </form>
+            <form>
+                <input class="butn" type="submit">
+                <input type="text" placeholder="Search for tasks">
+            </form>
+        </div>
         </header>
         <section>
-            <ul class="taskChecklist" id="items" >
-                <li class="tasks">Task 1 <input type="checkbox"></li>
-                <li class="tasks">Task 2<input type="checkbox"></li>
-                <li class="tasks">Task 3<input type="checkbox"></li>
-                <li class="tasks">Task 4<input type="checkbox"></li>
+            <ul class="taskChecklist" id="tasks" >
+                <li class="task">Task 1 <input type="checkbox"></li>
+                <li class="task">Task 2<input type="checkbox"></li>
+                <li class="task">Task 3<input type="checkbox"></li>
+                <li class="task">Task 4<input type="checkbox"></li>
             </ul>
         </section>
         <footer>

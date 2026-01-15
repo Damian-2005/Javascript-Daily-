@@ -11,8 +11,6 @@ body{
 }
 header{
     background-color: #A8DF8E;
-    display: flex;
-    justify-content:space-between;
 }
 header {
   /* 1. Necessary to make the internal items align */
@@ -91,12 +89,12 @@ section{
   transform: rotate(10deg);
   z-index: 10;
 }
-button{
+.butn{
     font-family: pangolin;
 }
 /* Styling the buttons*/
 
-button{
+.butn{
     background-color:#FFAAB8;
     border-radius: 20px;
     border: 2px solid #FFFFE8;
@@ -108,7 +106,7 @@ input{
 .tasksChecklist{
     gap: 10px;
 }
-.tasks{
+.task{
     border: 2px #FFFFE8 solid;
     display: flex;
     justify-content: space-between;
