@@ -20,3 +20,15 @@ form.addEventListener('submit', addItem); --> This checks if a submit action as 
 Corrected my HTML code, replace the buttons with input type sumbit and search so that the form can actually listen for these inputs
 
 Using the create element method, we create the new 'li' element (our new task)
+
+Apparently the event listener only picks the first element that it sees. And not all with the class name. Interesting...
+
+Algorithm for task removal:
+
+If a particular task has been clicked. 
+The console.log fires off and says the task number that has been clicked.
+
+
+.remove() method is a method that directly removes element from the DOM.
+
+
